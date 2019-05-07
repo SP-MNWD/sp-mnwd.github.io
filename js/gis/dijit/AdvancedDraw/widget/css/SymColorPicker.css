@@ -1,0 +1,47 @@
+.colorPicker {
+    margin-top: 3px;
+}
+
+.colorPickerCloseIcon {
+    background: url('../assets/dialogCloseIcon.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    height: 15px;
+    width: 21px;
+    cursor: pointer;
+}
+
+.colorPickerCloseIcon:hover {
+    background-position: -21px;
+}
+
+.colorPicker .dijitButtonText {
+    padding-left: 20px;
+}
+
+.colorPicker .colorSwatch {
+    height: 14px;
+    width: 14px;
+    position: relative;
+    left: 10px;
+    top: -22px;
+}
+
+.colorPicker .colorPickerDropdown {
+    margin-bottom: -15px;
+}
+
+.colorPicker .colorPickerSlider {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* claro overrides */
+
+.dijitColorPalette, .dojoxColorPicker {
+    margin-top: 5px !important;
+    margin-right: 20px !important;
+}

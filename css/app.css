@@ -1,0 +1,91 @@
+@import url('./theme/flat/flat.css'); /* dojo's flat theme */
+@import url('./cmv.css'); /* the start of cmv theme */
+
+.appHeader {
+    background-color: yellow;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.appHeader .headerLogo {
+    height: calc(100% - 10px);
+    left: 15px;
+}
+
+.appHeader .headerTitle {
+    color: #FF0000;
+    font-size: 16pt;
+    font-weight: bold;
+    left: 30px;
+}
+
+.appHeader .subHeaderTitle {
+    color: #FF0000;
+    font-size: small;
+    padding-left: 20px;
+}
+
+.appHeader .search {
+    left: 60px;
+}
+
+.appHeader .headerLinks {
+    color: #FF0000;
+    float: right;
+    right: 15px;
+    text-align: right;
+}
+
+.appHeader .headerLinks a {
+    color: #FF0000;
+}
+
+.appHeader .headerLogo,
+.appHeader .headerTitle,
+.appHeader .search {
+    float: left;
+}
+
+.appHeader .headerLogo,
+.appHeader .headerTitle,
+.appHeader .search,
+.appHeader .headerLinks {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#sidebarLeft {
+    width: 334px;
+}
+
+#sidebarRight {
+    width: 300px;
+}
+
+#sidebarBottom {
+    height: 100px;
+}
+
+#sidebarTop {
+    height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    /* no search widget in app header */
+    .appHeader .search {
+        display: none;
+    }
+
+    /* no logo in app header */
+    .appHeader .headerLogo {
+        display: none;
+    }
+
+    /* move the title when no logo */
+    .appHeader .headerTitle {
+        left: 10px;
+    }
+}
